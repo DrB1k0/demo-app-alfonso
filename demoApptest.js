@@ -52,7 +52,7 @@ function log() {
 }
 
 
-app.post('/testacroce', requestVerifier, function(req, res) {
+app.post('/', requestVerifier, function(req, res) {
 
   if (req.body.request.type === 'LaunchRequest') {
     res.json(getNewHero());
